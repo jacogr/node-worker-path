@@ -1,0 +1,19 @@
+{
+  "name": "node-worker-path",
+  "version": "0.0.1",
+  "description": "Worker relative paths with yarn workspaces",
+  "main": "index.js",
+  "repository": "https://github.com/jacogr/node-worker-path.git",
+  "author": "Jaco Greeff <jacogr@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "jest": "^23.3.0"
+  },
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-worker jest"
+  }
+}
